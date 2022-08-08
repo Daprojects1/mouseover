@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+canvas{
+    position: absolute;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    position: relative;
+}
+
+.ball{
+    position: absolute;
+    border-radius: 100%;
+}
+
+div.ball:hover{
+    animation: moveBall 0.8s infinite ease-in;
+    animation-direction: alternate;
+}
+
+@keyframes moveBall {
+    0%{transform: scale(1);}
+    25%{transform: scale(1.2);}
+    50%{transform: scale(1.4);}
+    75%{transform: scale(1.6);}
+    100%{transform: scale(1.8);}
+}
